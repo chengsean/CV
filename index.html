@@ -630,10 +630,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>1、负责引入spring-aspects依赖用于注解的方式实现数据库操作的事务管理。添加spring-aspects的依赖的AnnotationTransactionAspect和Transactional注解实现更灵活的面向切面数据源事务管理，用于替代之前XML的实现方式。在创建数据源事务管理对象DataSourceTransactionManager后，将其注入至AnnotationTransactionAspect面向切面事务对象中，然后在需要进行事务管理的子类对象的方法上添加Transactional注解，并输入相应的数据源事务管理对象bean名称、布尔类型只读等参数。</p>
 </li>
 <li class="data-line-50">
-<p>2、负责引入SpringBoot和Maven整体升级项目架构。添加SpringBoot用于升级和替换Spring4.0.x来实现项目的简化、自动化配置、使用内置Tomcat即可启动，并以Maven来实现项目的构建、组件依赖管理。结合SpringBoot与Maven实现默认、自定义项目环境配置、打包。通过pom、yml文件等一系列配置后，在进行项目打包时，Maven根据给定的值或默认值修改SpringBoot时默认配置文件的spring.profiles.active属性值。在启动时SpringBoot除了加载默认配置文件，还根据spring.profiles.active加载相应应的配置文件。</p>
+<p>2、负责引入SpringBoot和Maven实现升级项目整体架构以及依赖管理。添加SpringBoot用于升级和替换Spring4.0.x来实现项目的简化、自动化配置、使用内置Tomcat即可启动，并以Maven来实现项目的构建、组件依赖管理。结合SpringBoot与Maven实现默认、自定义项目环境配置、打包。通过pom、yml文件等一系列配置后，在进行项目打包时，Maven根据给定的值或默认值修改SpringBoot时默认配置文件的spring.profiles.active属性值。在启动时SpringBoot除了加载默认配置文件，还根据spring.profiles.active加载相应应的配置文件。</p>
 </li>
 <li class="data-line-51">
-<p>3、负责升级Java1.8.x和IntelliJ IDEA集成开发环境。相应的Tomcat升级至Tomcat9.x。由于当前的MyEclipse10.x亦不支持JDK1.8.x，经过学习和使用高版本的MyEclipse和IntelliJ IDEA开发工具，将该项目迁移至IntelliJ IDEA。</p>
+<p>3、负责升级Java1.8.x和IntelliJ IDEA集成开发环境。相应的Tomcat升级至Tomcat9.x。由于当前的MyEclipse10.x亦不支持JDK1.8.x，经过学习和使用高版本的MyEclipse和IntelliJ IDEA进行两相比较，最终决定将该项目迁移至IntelliJ IDEA。</p>
 </li>
 </ul>
 </div>
@@ -699,7 +699,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist data-line-66">
 <ul>
 <li class="data-line-66">
-<p>1、协助同事解决跨域登录无法请求数据问题。通过使用Memcached替代Session存储用户登录信息方案，帮助开发同事解决特殊情况下，需要从商城前台往后台跨域登录成功却无法再请求活动数据的问题。原因是跨域的每个请求会生成一个Session导致登录信息丢失。在开发和测试环境没发现问题，是环境不一致导致的。开发、测试环境的Tomcat和项目比例是一对一，而生产环境则是一对多（为了杜绝再出现类似问题，开发、测试环境要与生产环境一致）。经过验证，跨域的每个请求的SessionID都是唯一的。</p>
+<p>1、协助同事解决跨域登录无法请求数据问题。通过使用Memcached替代Session存储用户登录信息方案，帮助开发同事解决特殊情况下，需要从商城前台往后台跨域登录成功却无法再请求活动数据的问题。原因是跨域的每个请求会生成一个Session导致登录信息丢失。在开发和测试环境没发现问题，是环境不一致导致的。开发、测试环境的Tomcat和项目比例是一对一，而生产环境则是一对多（为了杜绝再出现类似问题，开发、测试环境要与生产环境一致）。经过验证，跨域的每个请求的SessionID都是唯一的，证明上述的判断。</p>
 </li>
 <li class="data-line-67">
 <p>2、协助同事解决SQL循环查询效率问题。通过使用MySQL的EXPLAIN关键字对SQL进行解析，解决了困扰他一个上午的问题。原因是SQL中条件字段没有使用或添加索引进而全表扫描，加上循环导致查询越来越慢。</p>
@@ -728,7 +728,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist data-line-73">
 <ul>
 <li class="data-line-73">
-<p>1、负责解决Apache POI Excel导出大数据量的效率问题。通过查询官方文档，多方测试，将正在使用的API XSSFWorkbook 替换为SXSSFWorkbook，其通过流的方式来提高内存和磁盘的IO效率，即默认内存每加载101条数据，就写入100至磁盘上。以此解决了使用Excel导出大数据量的效率问题。</p>
+<p>1、负责解决Apache POI Excel导出大数据量的效率问题。通过查阅官方文档，多方测试，将正在使用的API XSSFWorkbook 替换为SXSSFWorkbook，其通过流的方式来提高内存和磁盘的IO效率，即默认内存每加载101条数据，就写入100至磁盘上。以此解决了使用Excel导出大数据量的效率问题。</p>
 </li>
 <li class="data-line-74">
 <p>2、参与商城前台、后台系统的文章业务的设计、开发，测试。主要负责文章关键字、文章专题图片、文章友情链接、文章分类、文章评论等模块。</p>
