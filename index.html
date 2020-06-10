@@ -617,7 +617,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>2、负责学习和使用Mybatis的分页插件pagehelper用于扩展Mybatis分页功能。首先为service层对象中的需要的方法添加分页注解、然后使用Aspectj和Component注释构建面向切面的Spring bean，并在bean方法上添加执行有分页注解方法的表达式参数的before注解。最后使用pagehelper提供的接口、分页函数，并根据输入分页参数进行相应的处理。</p>
 </li>
 <li class="data-line-47">
-<p>3、负责负责学习和使用Mybatis来代替SpringJDBC作为项目的主要数据持久层框架来解决SpringJDBC框架在代码中拼接SQL，容易出现语法错误，且IDEA也无法检测等问题。采用XML的配置方式，首先将原service接口方法拷贝至Mapper接口，创建映射命名空间对应的Mapper接口XML文件。添加ID与Mapper接口方法同名的增删改查元素，将与元素ID相同service接口实现对象方法的SQL语句拷贝到元素中。创建ResultMap元素以及对应的对象，在mybatis-config.xml中配置相应的设定、resultMap类型别名、映射Mapper接口XML文件。然后在创建SqlSessionFactoryBean对象时设置mybatis-config.xml文件的位置、数据源并创建SqlSessionFactory。最后使用SqlSessionFactory作为构造参数创建SqlSessionTemplate对象，Mapper类作为方法参数来构建Mapper对象。</p>
+<p>3、负责学习和使用Mybatis来代替SpringJDBC作为项目的主要数据持久层框架来解决SpringJDBC框架在代码中拼接SQL，容易出现语法错误，且IDEA也无法检测等问题。采用XML的配置方式，首先将原service接口方法拷贝至Mapper接口，创建映射命名空间对应的Mapper接口XML文件。添加ID与Mapper接口方法同名的增删改查元素，将与元素ID相同service接口实现对象方法的SQL语句拷贝到元素中。创建ResultMap元素以及对应的对象，在mybatis-config.xml中配置相应的设定、resultMap类型别名、映射Mapper接口XML文件。然后在创建SqlSessionFactoryBean对象时设置mybatis-config.xml文件的位置、数据源并创建SqlSessionFactory。最后使用SqlSessionFactory作为构造参数创建SqlSessionTemplate对象，Mapper类作为方法参数来构建Mapper对象。</p>
 </li>
 </ul>
 </div>
