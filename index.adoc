@@ -29,7 +29,6 @@
     * 对Java自动拆装箱、泛型、并发、反射、AOP、注解、IO/NIO有较为深入的理解和研究以及使用，熟悉JVM内存模型。
     * 熟练使用Git/GitHub，对时下流行的技术如: SpringCloud(Eureka)、RabbitMQ进行学习研究。
     * 熟悉使用Linux(Ubuntu、CentOS)。
-    * 喜欢独立思考，代码洁癖。
     * 熟悉分布式，对一致性算法如：Paxos、Raft有较好的理解。
     * 善于使用各种编辑器用于帮助提高开发效率，如: Sublime Text3、Visual Studio Code、Vim等等。
 
