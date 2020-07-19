@@ -549,107 +549,107 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>个人对技术的理解，地基打得好、大楼盖得高。即尽可能深入浅出基础知识，然后学习新技术、框架或者语言。</p>
 </li>
 <li class="data-line-29">
-<p>阅读Java核心技术、Java并发编程实战、深入理解Java虚拟机等书籍、源码。对自动拆装箱、泛型、并发、反射、AOP、注解、Java8的lambda表达式有较为深入的理解和研究以及使用。</p>
+<p>对Java自动拆装箱、泛型、并发、反射、AOP、注解、IO/NIO有较为深入的理解和研究以及使用，熟悉JVM内存模型。</p>
 </li>
 <li class="data-line-30">
-<p>熟练使用Git/GitHub，对时下流行的容器化、微服务技术如: Docker、SpringBoot、SpringCloud进行研究，使用。</p>
+<p>熟练使用Git/GitHub，对时下流行的技术如: SpringCloud(Eureka)、RabbitMQ进行学习研究。</p>
 </li>
 <li class="data-line-31">
-<p>善于使用各种编辑器用于帮助提高开发效率，如: Sublime Text3、Visual Studio Code、Vim等等。</p>
+<p>熟悉使用Linux(Ubuntu、CentOS)。</p>
 </li>
 <li class="data-line-32">
-<p>熟悉使用Linux(Ubuntu、CentOS)各种命令，喜欢在Windows10使用Xshell连接使用来进行使用，搭建Samba来实现Windows和Linux文件共享实现Windows系统、文件备份的存储。</p>
+<p>熟悉分布式，对一致性算法如：Paxos、Raft有较好的理解。</p>
+</li>
+<li class="data-line-33">
+<p>善于使用各种编辑器用于帮助提高开发效率，如: Sublime Text3、Visual Studio Code、Vim等等。</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
-<div class="sect1 data-line-34">
+<div class="sect1 data-line-35">
 <h2 id="_项目经验"><strong>项目经验</strong></h2>
 <div class="sectionbody">
-<div class="ulist data-line-35">
-<ul>
-<li class="data-line-35">
-<p><strong>外部商品对接项目(2016.06——至今)</strong></p>
 <div class="ulist data-line-36">
 <ul>
 <li class="data-line-36">
+<p><strong>外部商品对接项目(2016.06——至今)</strong></p>
+<div class="ulist data-line-37">
+<ul>
+<li class="data-line-37">
 <p>项目负责人、Java开发工程师</p>
 </li>
-<li class="data-line-37">
+<li class="data-line-38">
 <p>广州房企网络科技有限公司</p>
 </li>
-<li class="data-line-38">
-<p><strong>项目描述</strong></p>
-<div class="ulist data-line-39">
-<ul>
 <li class="data-line-39">
-<p>外部商品对接项目是大尚国际商城的子系统，主要作用是接入第三方平台的商品进行销售，主要有商品更新对接任务和商品录入两大功能，并实现框架级定时多任务、多线程的商品对接更新和人工上传方式商品录入功能的结合。系统有controller、service、mapper、task等4层架构。基于Java1.8.x、nginx1.12.x、SpringBoot2.1.x、MyBatis、Thymeleaf、jQuery等技术。数据库使用使用Redis3.2.x、MySQL8.0.x。容器化基于docker、docker-compose，镜像仓库harbor。 平台支撑方面: 开发环境基于Windows10、使用IntelliJ IDEA(IDEA)2.x以及Subversion进行开发和版本控制。生产环境基于公司内部服务器以及Windows Server、Linux操作系统。</p>
+<p><strong>项目描述</strong></p>
+<div class="ulist data-line-40">
+<ul>
+<li class="data-line-40">
+<p>外部商品对接项目是大尚国际商城的子系统，主要作用是接入第三方平台的商品进行销售，主要有商品更新对接任务和商品录入两大功能，并实现框架级定时多任务、多线程的商品对接更新和人工上传方式商品录入功能的结合。系统有controller、service、mapper、task等4层架构。基于Java1.8.x、nginx1.12.x、SpringBoot2.1.x、MyBatis、Thymeleaf、jQuery等技术。数据库使用使用Redis3.2.x、MySQL8.0.x。容器化基于docker、docker-compose，镜像仓库harbor。 平台支撑方面: 开发环境基于Windows10、使用IntelliJ IDEA(IDEA)2.x以及Subversion进行开发和版本控制。生产环境基于公司内部服务器以及Windows Server、CentOS操作系统。</p>
 </li>
 </ul>
 </div>
 </li>
-<li class="data-line-40">
-<p><strong>项目职责</strong></p>
-<div class="ulist data-line-41">
-<ul>
 <li class="data-line-41">
-<p><strong>2020年</strong></p>
+<p><strong>项目职责</strong></p>
 <div class="ulist data-line-42">
 <ul>
 <li class="data-line-42">
+<p><strong>2020年</strong></p>
+<div class="ulist data-line-43">
+<ul>
+<li class="data-line-43">
 <p>1、负责将项目以Docker容器的方式进行部署。首先准备好docker、docker-compose、docker仓库harbor环境，并对harbor进行相应HTTPS配置，学习编写Dockerfile、docker-compose文件的用于构建项目的镜像、容器以及其依赖组件（MySQL、Redis），并相应的修改数据库URL的IP和端口为docker-compose的服务名称。然后学习使用Maven插件jib用于免于编写Dockerfile多层快速构建镜像，并将镜像推送至远程主机的harbor仓库中。最后登录harbor拉取最新应用镜像，使用docker-compose命令行构建并启动应用容器以及其依赖。</p>
 </li>
-<li class="data-line-43">
+<li class="data-line-44">
 <p>2、负责使用Maven和Tomcat插件结合实现命令行一键打包和部署项目。首先在外部Tomcat、Maven配置文件中添加远程Tomcat地址、用户名、密码以及Tomcat与Maven插件依赖。然后把MySQL连接器交给外部Tomcat的管理。封装Spring的ScheduledExecutorFactoryBean用于替换ScheduledThreadPoolExecutor对象，并重写destroy方法。用以解决Tomcat重新部署项目时MySQL连接池、ScheduledThreadPoolExecutor线程池未关闭导致内存泄漏问题。</p>
 </li>
 </ul>
 </div>
 </li>
-<li class="data-line-44">
-<p><strong>2019年</strong></p>
-<div class="ulist data-line-45">
-<ul>
 <li class="data-line-45">
+<p><strong>2019年</strong></p>
+<div class="ulist data-line-46">
+<ul>
+<li class="data-line-46">
 <p>1、负责引入Thymeleaf模板引擎, view层使用HTML替代JSP。在SpringBoot配置文件中添加thymeleaf模板文件的前缀（路径）和后缀名，根据SpringBoot文档把静态内容(js/css)存储至static目录下，并在请求过滤器适配器中将静态内容处理对象加入白名单。将JSP内容拷贝至HTML文件，根据Thymeleaf文档对文件头、文本表达式、路径格式以及包含其他文件格式等等进行相应的修改。</p>
 </li>
-<li class="data-line-46">
+<li class="data-line-47">
 <p>2、负责学习和使用Mybatis的分页插件pagehelper用于扩展Mybatis分页功能。首先为service层对象中的需要的方法添加分页注解、然后使用Aspectj和Component注释构建面向切面的Spring bean，并在bean方法上添加执行有分页注解方法的表达式参数的before注解。最后使用pagehelper提供的接口、分页函数，并根据输入分页参数进行相应的处理。</p>
 </li>
-<li class="data-line-47">
+<li class="data-line-48">
 <p>3、负责学习和使用Mybatis来代替SpringJDBC作为项目的主要数据持久层框架来解决SpringJDBC框架在代码中拼接SQL，容易出现语法错误，且IDEA也无法检测等问题。采用XML的配置方式，首先将原service接口方法拷贝至Mapper接口，创建映射命名空间对应的Mapper接口XML文件。添加ID与Mapper接口方法同名的增删改查元素，将与元素ID相同service接口实现对象方法的SQL语句拷贝到元素中。创建ResultMap元素以及对应的对象，在mybatis-config.xml中配置相应的设定、resultMap类型别名、映射Mapper接口XML文件。然后在创建SqlSessionFactoryBean对象时设置mybatis-config.xml文件的位置、数据源并创建SqlSessionFactory。最后使用SqlSessionFactory作为构造参数创建SqlSessionTemplate对象，Mapper类作为方法参数来构建Mapper对象。</p>
 </li>
 </ul>
 </div>
 </li>
-<li class="data-line-48">
-<p><strong>2018年</strong></p>
-<div class="ulist data-line-49">
-<ul>
 <li class="data-line-49">
+<p><strong>2018年</strong></p>
+<div class="ulist data-line-50">
+<ul>
+<li class="data-line-50">
 <p>1、负责引入spring-aspects依赖用于注解的方式实现数据库操作的事务管理。添加spring-aspects的依赖的AnnotationTransactionAspect和Transactional注解实现更灵活的面向切面数据源事务管理，用于替代之前XML的实现方式。在创建数据源事务管理对象DataSourceTransactionManager后，将其注入至AnnotationTransactionAspect面向切面事务对象中，然后在需要进行事务管理的子类对象的方法上添加Transactional注解，并输入相应的数据源事务管理对象bean名称、布尔类型只读等参数。</p>
 </li>
-<li class="data-line-50">
+<li class="data-line-51">
 <p>2、负责引入SpringBoot和Maven实现升级项目整体架构以及依赖管理。添加SpringBoot用于升级和替换Spring4.0.x来实现项目的简化、自动化配置、使用内置Tomcat即可启动，并以Maven来实现项目的构建、组件依赖管理。结合SpringBoot与Maven实现默认、自定义项目环境配置、打包。通过pom、yml文件等一系列配置后，在进行项目打包时，Maven根据给定的值或默认值修改SpringBoot时默认配置文件的spring.profiles.active属性值。在启动时SpringBoot除了加载默认配置文件，还根据spring.profiles.active加载相应应的配置文件。</p>
 </li>
-<li class="data-line-51">
+<li class="data-line-52">
 <p>3、负责升级Java1.8.x和IntelliJ IDEA集成开发环境。相应的Tomcat升级至Tomcat9.x。由于当前的MyEclipse10.x亦不支持JDK1.8.x，经过学习和使用高版本的MyEclipse和IntelliJ IDEA进行两相比较，最终决定将该项目迁移至IntelliJ IDEA。</p>
 </li>
 </ul>
 </div>
 </li>
-<li class="data-line-52">
-<p><strong>2017年</strong></p>
-<div class="ulist data-line-53">
-<ul>
 <li class="data-line-53">
+<p><strong>2017年</strong></p>
+<div class="ulist data-line-54">
+<ul>
+<li class="data-line-54">
 <p>1、负责封装(基于CGLib)构建动态方法同步工具类。使用CGLib Nodep2.1_3(AOP框架)的MethodInterceptor接口以及Enhancer对象和同步注解组合实现多线程商品更新对接任务中更灵活的方法同步、以及方法同步必要的控制台日志输出。期间解决了Enhancer构建被代理对象时抛出NoSuchMethodException，原因是其在使用反射的方式构建对象前会根据参数类型数组查找到相应的构造器，如果输入参数类型为基础数据类型此时已经转换为其(引用数据类型)封装对象，就可能会因为参数类型差异产生无法找到相应的构造器。解决办法是让构造器参数类型都使用引用数据类型（即其封装对象），无论使用new关键字或者反射构建来对象无需担心构造器参数类型问题。</p>
 </li>
-<li class="data-line-54">
-<p>2、负责将商品更新对接任务升级为定时多线程(基于Java原生并发包)的处理方式来提高数据更新效率问题。通过学习和使用ScheduledThreadPoolExecutor(替换Timer)、ThreadPoolExecutor、Runnable、Condition、Atomic对象、队列存储数据和更新对接任务集合，基于接口标准化、生产消费模式的方式实现多线程商品更新对接。在更新对接任务执行过程中对抛出的异常中进行标识和统计以及持久化状态位、强制关闭线程池进行同步操作来中断任务，并以可控的方式重新执行更新对接任务的异常处理机制，来处理执行更新对接任务过程中出现的对接服务器或者数据的异常问题。</p>
-</li>
 <li class="data-line-55">
-<p>3、负责与同事一同解决定时器商品对接更新和商品录入同时操作可能产生的库存数据关联或丢失问题。由于商品对接更新是程序操作，而商品录入则是人工操作，由于他们无法进行协调先后顺序，加上商品有多仓库库存的因素，商品对接更新采用替换(删除后插入数据)的方式更新库存，若商品录入同时操作可能会导致库存数据关联或丢失等问题。经过商讨，通过添加中间表并设置逻辑删除标志位、错峰更新等方式进行解决。</p>
+<p>2、负责将商品更新对接任务升级为定时多线程(基于Java原生并发包)的处理方式来提高数据更新效率问题。通过学习和使用ScheduledThreadPoolExecutor(替换Timer)、ThreadPoolExecutor、Runnable、Condition、Atomic对象、队列存储数据和更新对接任务集合，基于接口标准化、生产消费模式的方式实现多线程商品更新对接。在更新对接任务执行过程中对抛出的异常中进行标识和统计以及持久化状态位、强制关闭线程池进行同步操作来中断任务，并以可控的方式重新执行更新对接任务的异常处理机制，来处理执行更新对接任务过程中出现的对接服务器或者数据的异常问题。</p>
 </li>
 </ul>
 </div>
